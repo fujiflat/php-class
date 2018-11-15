@@ -20,6 +20,10 @@
             @include('inc.messages')
         @yield('content')
         </div>
+        <script src="{{URL::asset('../vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor' );
+        </script>
 
     </body>
 </html>
